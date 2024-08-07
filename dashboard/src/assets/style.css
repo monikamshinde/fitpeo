@@ -1,0 +1,141 @@
+.nav-link{
+    color:#fff;
+}
+.navbar{
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;   
+}
+.black-first, body{
+    background-color:#141318;
+    color: #fff;
+}
+.black-second{
+    background-color:#1f2029;
+    color: #fff;
+}
+.sidebar-list{
+    width:70px;
+    position: fixed;
+    z-index: 1;
+}
+.main-content{
+    margin-left:70px;
+    width:calc(100% - 70px) !important;
+}
+.sidebar-list .nav-link {
+    transition: background-color 0.2s ease;
+}
+
+.sidebar-list .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.sidebar-list .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.count-box {   
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;   
+    text-align: center;
+}
+
+.count-box span {
+    font-size: 1.5rem;
+    /* display: block; */
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.count-box .performance{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.performance.text-success::before{
+    content:"";
+    position: relative;
+    bottom: 13px;
+    left: -2px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid;
+}
+.performance.text-danger::before{
+    content:"";
+    position: relative;
+    top: 13px;
+    left: -2px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid;
+}
+
+/* CircularProgressBar start */
+.progress-circle {
+    --progress: 0; 
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #7295ff calc(var(--progress) * 1%),
+        #2a3361 calc(var(--progress) * 1%)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .progress-circle::before {
+    content: "";
+    width: 70px;
+    position: relative;
+    height: 70px;
+    border-radius: 50%;
+    background-color:#141318;
+}
+  .progress-circle__text {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top:0 !important;
+    line-height: 15px;
+  }
+  
+/* CircularProgressBar end */
+.goals .list-group .list-group-item svg{  
+    vertical-align: middle;   
+    border-radius: 50%;   
+    background: #eee;
+}
+.goals .list-group .list-group-item svg:first-child{
+    padding: 15px;    
+    font-size: 20px;       
+}
+.goals .list-group .list-group-item svg:last-child{
+    padding: 7px 9px;    
+    font-size: 13px;   
+    margin-top:10px;    
+}
+.goals .list-group-item{
+    background-color: transparent;
+    border: none;    
+}
+.feedback .list-group-item{
+    background-color: transparent;
+    color:#fff;
+    border:none;
+    border-bottom: 1px solid #eee;
+}
+
+.userImg svg:first-child{
+    padding: 9px 10px;
+    background-color: #6f9788;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.gold-color{
+    color:gold;
+}
